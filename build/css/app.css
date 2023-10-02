@@ -349,7 +349,9 @@ ul {
   padding: 2rem 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   line-height: 1.5;
 }
@@ -368,6 +370,10 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+[class$=__heading] {
+  margin: 2rem 0;
 }
 
 .header {
@@ -499,9 +505,45 @@ a {
 
 .destino {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
 }
 .destino__imagen {
   width: 14rem;
   height: 14rem;
+}
+.destino__nombre, .destino__distancia {
+  margin: 0;
+}
+
+.lugares__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+@media (min-width: 768px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lugar {
+  scroll-snap-align: center;
 }
 /*# sourceMappingURL=app.css.map */

@@ -17,15 +17,17 @@
 
 .destino {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
 
   &__imagen {
     width: 14rem;
     height: 14rem;
   }
 
-  //&__nombre {
-  //}
-
-  //&__distancia {
-  //}
+  &__nombre,
+  &__distancia {
+    margin: 0;
+  }
 }
