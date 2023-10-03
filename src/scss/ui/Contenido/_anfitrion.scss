@@ -17,6 +17,7 @@
   background-size: 100%, 60rem;
   background-position: center, center bottom;
   background-repeat: no-repeat;
+  border-radius: 1rem;
 
   @include m.telefono {
     background-size: 100%, 70rem;
@@ -32,17 +33,32 @@
         transparent 55%
       ),
       url(../img/anfitrion.jpg);
+    background-size: 100%, auto;
+    background-position: center, 50% 30%;
+    padding: 15rem 5rem;
   }
 
-  //&__contenido {
-  //}
+  @include m.desktop {
+    background-position: center, right center;
+  }
 
-  //&__heading {
-  //}
+  &__contenido {
+    @include m.tablet {
+      max-width: 50%;
+    }
+  }
 
-  //&__texto {
-  //}
+  &__heading {
+  }
 
-  //&__enlace {
-  //}
+  &__texto {
+    color: v.$blanco;
+  }
+
+  &__enlace {
+    @include m.boton(v.$blanco, v.$negro);
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
