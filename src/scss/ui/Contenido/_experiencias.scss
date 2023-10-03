@@ -16,11 +16,15 @@
 
 .experiencia {
   &__imagen {
+    border-radius: 1rem;
   }
 
   &__titulo {
+    font-weight: 700;
+    font-size: 2rem;
   }
 
   &__descripcion {
+    font-size: 1.8rem;
   }
 }

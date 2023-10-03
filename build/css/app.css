@@ -633,4 +633,15 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.experiencia__imagen {
+  border-radius: 1rem;
+}
+.experiencia__titulo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.experiencia__descripcion {
+  font-size: 1.8rem;
+}
 /*# sourceMappingURL=app.css.map */
